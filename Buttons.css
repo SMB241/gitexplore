@@ -1,0 +1,36 @@
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.container {
+    flex: 1;
+}
+
+.container .btn {
+    margin: 0 auto;
+    width: 200px;
+    text-align: center;
+    color: #f0f0f0;
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.container .btn::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: aliceblue;
+    transition: width 0.3s ease;
+}
+
+.container .btn:hover::before {
+    width: 100%;
+}

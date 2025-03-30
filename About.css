@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.section1 {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/bg2.jpg") no-repeat center center/cover;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+}
+
+nav h1 img {
+    height: 250px;
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: gray;
+}
+
+.heading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 70px;;
+}
+
+.pfp {
+    margin-right: 30px;
+}
+
+.pfp img {
+    height: 400px;
+    width: auto;
+    border-radius: 30%;
+    margin-top: 150px;
+    margin-right: 50px;
+}
+
+.heading {
+    max-width: 30%;
+    margin-top: 100px;
+    padding: 0px 20px;
+}
+
+.heading h1 {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.heading p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.container {
+    flex: 1;
+}
+
+
+/* Adjust layout for tablets (768px and below) */
+@media only screen and (max-width: 768px) {
+    .heading-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .pfp {
+        margin-bottom: 30px;
+    }
+
+    .heading {
+        max-width: 80%;
+        padding: 0;
+    }
+
+    .heading h1 {
+        font-size: 36px;
+    }
+
+    .heading p {
+        font-size: 18px;
+    }
+}
+
+/* Adjust layout for mobile devices (480px and below) */
+@media only screen and (max-width: 480px) {
+    nav h1 img {
+        height: 150px; /* Resize logo for smaller screens */
+    }
+
+    nav ul li a {
+        font-size: 16px; /* Adjust menu font size for smaller screens */
+    }
+
+    .heading-container {
+        flex-direction: column;
+        margin: 50px 0;
+    }
+
+    .pfp img {
+        height: 250px;
+        width: auto;
+        margin-bottom: 20px;
+    }
+
+    .heading {
+        max-width: 90%;
+        padding: 0;
+    }
+
+    .heading h1 {
+        font-size: 30px;
+    }
+
+    .heading p {
+        font-size: 16px;
+    }
+}
